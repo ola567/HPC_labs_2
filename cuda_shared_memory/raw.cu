@@ -35,7 +35,7 @@ int main(int argc,char **argv) {
     int threadsinblock=1024;
     int blocksingrid;
 
-    int N,A,B;
+    int N, A, B;
     
  	cudaEvent_t start, stop;
     float milliseconds = 0;
@@ -55,7 +55,7 @@ int main(int argc,char **argv) {
         return 1;
     }
 
-	generateRandomNumbers(randomNumbers, N,A,B);
+	generateRandomNumbers(randomNumbers, N, A, B);
 
 	blocksingrid = ceil((double)N/threadsinblock);
 
